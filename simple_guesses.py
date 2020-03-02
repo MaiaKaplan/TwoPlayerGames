@@ -5,7 +5,6 @@ The goal of this script is to create a back and forth between two players.
 Player1 will pick a number between 1 and 10, player 2 will try to guess it,
 with player 1 saying "guess is too high or low" in response to the guess.
 """
-
 import random
 
 # in this setup, the range of numbers is [0,10) and since the learning rate is 1 step
@@ -46,3 +45,4 @@ def update_guess_single_step(guess, gradient):
     if gradient == +1:
         return guess + learning_rate
 
+single_increment()
